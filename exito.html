@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Exitosa</title>
+    <link rel="stylesheet" href="exito.css">  <!-- Vincula el archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>¡Felicidades, <span id="nombreCompleto"></span>!</h1>
+        <p>Tu inscripción ha sido enviada con éxito.</p>
+        <div class="emoji">🎉🎊</div>
+    </div>
+
+    <script>
+        // Obtener el nombre completo desde localStorage y mostrarlo
+        const nombreCompleto = localStorage.getItem('nombreCompleto');
+        document.getElementById('nombreCompleto').textContent = nombreCompleto;
+    </script>
+</body>
+</html>
